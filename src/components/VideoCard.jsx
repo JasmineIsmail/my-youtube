@@ -8,12 +8,9 @@ const VideoCard = ({info}) => {
     const {viewCount}= statistics;
     const relativeTime= relativeTimeFormat(publishedAt);
     const videoId = id?.videoId||id;
-    //console.log(info);
-   
   return (
-    
-    <div className='w-96 p-2 m-2'>
-      <img className='w-96  rounded-3xl shadow'
+    <div className='w-full p-1'>
+      <img className='w-full aspect-video rounded-2xl shadow object-cover'
         src={thumbnails.high.url}/>
       <ul>
         <li className='mt-2 p-2 font-bold'>{title}</li>
@@ -22,7 +19,6 @@ const VideoCard = ({info}) => {
         <li  className='text-gray-400 pl-2'>{relativeTime}</li>
       </ul>
     </div>
-   
   )
 }
 

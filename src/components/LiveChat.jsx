@@ -37,7 +37,6 @@ const LiveChat = () => {
         className='w-full p-2 border border-black'
         onSubmit={(e)=>  {
             e.preventDefault();
-            //console.log("form submitted",chatMessage)
             dispatch(addMessage({
                 id: crypto.randomUUID(),
                 name: "Jasmine",

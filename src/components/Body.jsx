@@ -7,9 +7,8 @@ import ButtonList from './ButtonList';
 const Body = () => {
   return (
     <div>
-     
-         <ButtonList/>
-        <VideoContainer/>
+      <ButtonList/>
+      <VideoContainer/>
     </div>
   )
 }

@@ -8,9 +8,7 @@ const MainContainer = () => {
   return (
     <div>
       <Header/>
-    
-    <div className='flex'>
-         
+      <div className='flex'>
         <Sidebar/>
         <Outlet/>
     </div>

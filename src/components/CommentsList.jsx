@@ -9,16 +9,14 @@ const CommentsList = ({id}) => {
     const  getComments = async ()=>{
         const data =await fetch(`${COMMENTS_API}&videoId=${id}`);
         const json= await data.json();
-       // console.log(json);
         setcomments(json.items);
     }
 
   return (
     <div>
       {
-      comments.map((c) =>(
-        <Comment key= {c.id} data={c}/>
-      ) )
+        comments ? comments.map((c) =>(
+        <Comment key= {c.id} data={c}/>)) :null
       }
     
     </div>

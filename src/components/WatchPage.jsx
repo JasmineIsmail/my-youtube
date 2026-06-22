@@ -8,20 +8,16 @@ import LikeButton from "./LikeButton";
 import Description from "./Description";
 import CommentsList from "./CommentsList";
 import LiveChat from "./LiveChat";
-//import RelatedVideoCard from "./RelatedVideoCard";
 
 const WatchPage = () => {
   const dispatch = useDispatch();
   const [searchParam] = useSearchParams();
   const videoID = searchParam.get("v");
-
   const [video, setVideo] = useState(null);
- // const [relatedVideos, setRelatedVideos] = useState([]);
 
   useEffect(() => {
     dispatch(closeMenu());
     fetchVideoDetails();
-    //fetchRelatedVideoDetails();
     window.scrollTo(0, 0);
   }, [videoID]);
 

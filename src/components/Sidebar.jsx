@@ -9,7 +9,6 @@ const Sidebar = () => {
   if(!isMenuOpen) return null;
   return (
     <div className='m-2 p-4 w-48  border-none shadow'>
-      
       <ul >
         <li className='font-bold pt-2 hover:shadow hover:cursor-pointer'> Home</li>
         <li>Shorts</li>

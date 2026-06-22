@@ -1,7 +1,3 @@
-// Source - https://stackoverflow.com/q/54708626
-// Posted by EMILO, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-02-12, License - CC BY-SA 4.0
-
 var nameList = [
   'Time', 'Past', 'Future', 'Dev',
   'Fly', 'Flying', 'Soar', 'Soaring', 'Power', 'Falling',

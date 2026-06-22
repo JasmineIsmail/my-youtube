@@ -15,12 +15,11 @@ const VideoContainer = () => {
   const getVideos= async ()=>{
     const data= await fetch(YOUTUBE_VIDEOLIST_API);
     const jsonData= await data.json();
-    //console.log(jsonData);
     setVideos(jsonData.items);
   }
   
   return (
-    <div className='flex flex-wrap'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 w-full'>
     {videos.length === 0? 
       (<div>Loading videos</div>) :
       videos.map((v) =>(
