@@ -21,11 +21,11 @@ const Comment = ({ data }) => {
         alt="user"
       />
 
-      <div className="px-3 min-w-0">
+      <div className="px-3 min-w-0 flex-1">
         <p className="font-bold">{authorDisplayName}</p>
 
         <p
-          className="wrap-break-wordbreak-word overflow-hidden"
+          className="wrap-break-word overflow-hidden text-sm md:text-base"
           dangerouslySetInnerHTML={{ __html: sanitizedHTML }}
         />
       </div>

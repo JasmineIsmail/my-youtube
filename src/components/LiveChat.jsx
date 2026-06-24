@@ -48,11 +48,11 @@ const LiveChat = () => {
         
         <input
         type='text' 
-        className='w-[260px] px-2 border border-black'
+        className='flex-1 min-w-0 px-2 py-1 border border-gray-400 rounded'
         value={chatMessage}
         onChange={(e)=>setChatMessage(e.target.value)}
         />
-        <button className='px-2 mx-2 bg-green-400 rounded-lg'>Send</button>
+        <button className='px-4 py-1 bg-green-400 text-black font-medium rounded-lg shrink-0 hover:bg-green-500 transition'>Send</button>
     </form>
     
     </>
