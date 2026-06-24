@@ -62,7 +62,7 @@ const Header = () => {
   }
 
   return (
-    <div className='w-screen flex items-center justify-between md:grid md:grid-flow-col h-14 p-2 px-4 shadow-lg bg-white sticky top-0 z-50'>
+    <div className='w-full flex items-center justify-between md:grid md:grid-flow-col h-14 p-2 px-4 shadow-lg bg-white fixed top-0 z-50'>
     <div className={`flex items-center col-span-2 ${isMobileSearchActive ? 'hidden md:flex' : 'flex'}`}>
      <img 
         onClick={()=>handleToggleMenu()}
