@@ -5,9 +5,8 @@ A fully responsive, feature-rich YouTube clone built using React. This project r
 ---
 
 ## 🚀 Live Demo
-🔗 https://vercel.com/jasmine10/my-youtube/4p5LisVSPb8m1cgSF7jneLLDSvBb
-
-## ✨ Key Features
+🔗 https://my-youtube-swart-eta.vercel.app/
+✨ Key Features
 * **Dynamic Video Feed:** Fetches and displays real-time trending videos using the YouTube Data API.
 * **Debounced Search & Suggestions:** Implements a high-performance search bar with debouncing to prevent API spamming and provide instant search suggestions.
 * **Responsive Layout:** Tailored with Tailwind CSS for pixel-perfect display across mobile, tablet, and desktop screens.
